@@ -1,0 +1,565 @@
+export const languages = {
+  fr: { code: 'fr', name: 'Français', flag: 'FR', dir: 'ltr' },
+  ar: { code: 'ar', name: 'العربية', flag: 'MA', dir: 'rtl' },
+  en: { code: 'en', name: 'English', flag: 'GB', dir: 'ltr' },
+}
+
+export const translations = {
+  fr: {
+    // Navbar
+    nav: {
+      services: 'Services',
+      pricing: 'Tarifs',
+      gallery: 'Galerie',
+      whyUs: 'Pourquoi nous',
+      contact: 'Contact',
+      book: 'Réserver',
+      language: 'Langue',
+      theme: 'Thème',
+    },
+    // Hero
+    hero: {
+      badge: 'Premium Auto Detailing · Casablanca',
+      title: 'Votre voiture mérite',
+      titleAccent: 'le meilleur soin',
+      subtitle: 'Auto lavage premium, nettoyage intérieur, detailing et protection automobile avec une finition exceptionnelle au cœur de Casablanca.',
+      ctaPrimary: 'Réserver maintenant',
+      ctaSecondary: 'Voir nos services',
+      stats: {
+        cars: 'Voitures traitées',
+        rating: 'Note client',
+        experience: "Années d'expérience",
+        satisfaction: 'Satisfaction',
+      },
+    },
+    // Services
+    services: {
+      eyebrow: 'Nos Services',
+      title: 'Un soin complet pour votre véhicule',
+      subtitle: 'Des prestations haut de gamme pensées pour chaque détail de votre voiture.',
+      items: {
+        exterior: {
+          title: 'Lavage Extérieur',
+          desc: 'Nettoyage carrosserie, jantes, vitres et séchage premium avec microfibre.',
+          features: ['Shampoing premium', 'Séchage microfibre', 'Brillance éclatante', 'Protection UV'],
+        },
+        interior: {
+          title: 'Nettoyage Intérieur',
+          desc: 'Aspiration complète, désinfection et parfum d\'ambiance pour un habitacle neuf.',
+          features: ['Aspiration premium', 'Désinfection', 'Parfum voiture', 'Cuir & tissus'],
+        },
+        detailing: {
+          title: 'Detailing Complet',
+          desc: 'Polissage carrosserie, rénovation et protection céramique longue durée.',
+          features: ['Polissage carrosserie', 'Rénovation peinture', 'Protection céramique', 'Finition miroir'],
+        },
+        protection: {
+          title: 'Protection Céramique',
+          desc: 'Revêtement céramique 9H pour une protection durable et une brillance exceptionnelle.',
+          features: ['Coating 9H', 'Effet hydrophobe', 'Durée 2-5 ans', 'Anti-rayures'],
+        },
+        polish: {
+          title: 'Polissage Carrosserie',
+          desc: 'Correction de peinture professionnelle pour éliminer micro-rayures et défauts.',
+          features: ['Correction peinture', 'Suppression rayures', 'Lustrage machine', 'Finition parfaite'],
+        },
+        engine: {
+          title: 'Nettoyage Moteur',
+          desc: 'Dégraissage et protection du compartiment moteur avec un rendu spectaculaire.',
+          features: ['Dégraissage', 'Protection plastiques', 'Finition usine', 'Inspection visuelle'],
+        },
+      },
+    },
+    // Why Us
+    whyUs: {
+      eyebrow: 'Pourquoi nous choisir',
+      title: 'L\'excellence au service de votre voiture',
+      subtitle: 'Un savoir-faire artisanal combiné aux meilleurs produits du marché.',
+      points: {
+        products: { title: 'Produits professionnels', desc: 'Les marques premium mondialement reconnues.' },
+        team: { title: 'Équipe expérimentée', desc: 'Des detailers certifiés et passionnés.' },
+        result: { title: 'Résultat premium', desc: 'Une finition impeccable garantie à chaque service.' },
+        speed: { title: 'Service rapide', desc: 'À Casablanca, votre temps est précieux.' },
+      },
+    },
+    // Pricing
+    pricing: {
+      eyebrow: 'Nos Tarifs',
+      title: 'Des formules adaptées à chaque besoin',
+      subtitle: 'Choisissez le soin parfait pour votre véhicule.',
+      popular: 'Le plus populaire',
+      bookNow: 'Réserver',
+      includes: 'Inclus :',
+      plans: {
+        basic: {
+          name: 'Basic',
+          tagline: 'Lavage extérieur express',
+          price: '149',
+          features: [
+            'Lavage carrosserie extérieur',
+            'Nettoyage jantes',
+            'Séchage microfibre',
+            'Aspiration intérieure rapide',
+            'Vitres extérieures',
+          ],
+        },
+        premium: {
+          name: 'Premium',
+          tagline: 'Le soin complet intérieur/extérieur',
+          price: '349',
+          features: [
+            'Tout du Basic inclus',
+            'Nettoyage intérieur complet',
+            'Désinfection habitacle',
+            'Parfum d\'ambiance premium',
+            'Protection peinture express',
+            'Plastiques et tableaux de bord',
+          ],
+        },
+        vip: {
+          name: 'VIP Detailing',
+          tagline: 'L\'expérience ultime du detailing',
+          price: '899',
+          features: [
+            'Tout du Premium inclus',
+            'Polissage carrosserie machine',
+            'Protection céramique 1 an',
+            'Nettoyage moteur',
+            'Rénovation phares',
+            'Finition concours',
+            'Garantie satisfaction',
+          ],
+        },
+      },
+    },
+    // Gallery
+    gallery: {
+      eyebrow: 'Galerie',
+      title: 'Notre savoir-faire en images',
+      subtitle: 'Découvrez le rendu spectaculaire de nos services.',
+      filters: {
+        all: 'Tout',
+        exterior: 'Extérieur',
+        interior: 'Intérieur',
+        detailing: 'Detailing',
+        before: 'Avant/Après',
+      },
+    },
+    // Before/After
+    beforeAfter: {
+      eyebrow: 'Transformation',
+      title: 'Avant / Après',
+      subtitle: 'Glissez pour révéler la transformation.',
+      slide: 'Glissez',
+    },
+    // Booking
+    booking: {
+      eyebrow: 'Réservation',
+      title: 'Réservez votre lavage',
+      subtitle: 'Une équipe vous répond en moins de 30 minutes.',
+      form: {
+        name: 'Nom complet',
+        phone: 'Téléphone',
+        service: 'Service souhaité',
+        date: 'Date souhaitée',
+        message: 'Message (optionnel)',
+        selectService: 'Sélectionnez un service',
+        submit: 'Réserver mon lavage',
+        submitting: 'Envoi en cours...',
+        success: 'Réservation envoyée ! Nous vous recontactons bientôt.',
+        required: 'Requis',
+      },
+    },
+    // Location
+    location: {
+      eyebrow: 'Nous trouver',
+      title: 'Auto Lavage Premium Casablanca',
+      subtitle: 'Au cœur de Casablanca, à quelques minutes de vous.',
+      address: 'Boulevard Zerktouni, Casablanca 20000, Maroc',
+      phone: 'Téléphone',
+      whatsapp: 'WhatsApp',
+      hours: 'Horaires',
+      hoursValue: 'Lun-Sam 8h-20h · Dim 9h-18h',
+      directions: 'Itinéraire',
+    },
+    // Footer
+    footer: {
+      tagline: 'L\'auto lavage premium au cœur de Casablanca.',
+      sections: 'Navigation',
+      services: 'Services',
+      contact: 'Contact',
+      legal: 'Mentions légales',
+      privacy: 'Confidentialité',
+      rights: 'Tous droits réservés.',
+      madeWith: 'Conçu avec passion à Casablanca',
+    },
+  },
+  ar: {
+    nav: {
+      services: 'خدماتنا',
+      pricing: 'الأسعار',
+      gallery: 'المعرض',
+      whyUs: 'لماذا نحن',
+      contact: 'اتصل بنا',
+      book: 'احجز',
+      language: 'اللغة',
+      theme: 'المظهر',
+    },
+    hero: {
+      badge: 'تفصيل السيارات الفاخر · الدار البيضاء',
+      title: 'سيارتك تستحق',
+      titleAccent: 'أفضل عناية',
+      subtitle: 'غسيل سيارات فاخر، تنظيف داخلي، تفصيل وحماية السيارات بلمسة استثنائية في قلب الدار البيضاء.',
+      ctaPrimary: 'احجز الآن',
+      ctaSecondary: 'اكتشف خدماتنا',
+      stats: {
+        cars: 'سيارة تم الاعتناء بها',
+        rating: 'تقييم العملاء',
+        experience: 'سنوات الخبرة',
+        satisfaction: 'الرضا',
+      },
+    },
+    services: {
+      eyebrow: 'خدماتنا',
+      title: 'عناية شاملة بسيارتك',
+      subtitle: 'خدمات راقية مصممة لكل تفصيل في سيارتك.',
+      items: {
+        exterior: {
+          title: 'الغسيل الخارجي',
+          desc: 'تنظيف الهيكل، العجلات، الزجاج وتجفيف فاخر بأقمشة الألياف الدقيقة.',
+          features: ['شامبو فاخر', 'تجفيف بالألياف', 'لمعان ساطع', 'حماية من الأشعة'],
+        },
+        interior: {
+          title: 'التنظيف الداخلي',
+          desc: 'شفط كامل، تعقيم وعطر فاخر لمقصورة جديدة.',
+          features: ['شفط فاخر', 'تعقيم', 'عطر السيارة', 'الجلد والأقمشة'],
+        },
+        detailing: {
+          title: 'تفصيل كامل',
+          desc: 'تلميع الهيكل، ترميم الطلاء وحماية سيراميكية طويلة الأمد.',
+          features: ['تلميع احترافي', 'ترميم الطلاء', 'حماية سيراميكية', 'لمسة نهائية'],
+        },
+        protection: {
+          title: 'حماية سيراميكية',
+          desc: 'طلاء سيراميكي 9H لحماية دائمة ولمعان استثنائي.',
+          features: ['طلاء 9H', 'مقاوم للماء', 'مدة 2-5 سنوات', 'مضاد للخدوش'],
+        },
+        polish: {
+          title: 'تلميع الهيكل',
+          desc: 'تصحيح احترافي للطلاء لإزالة الخدوش الصغيرة والعيوب.',
+          features: ['تصحيح الطلاء', 'إزالة الخدوش', 'تلميع بالماكينة', 'لمسة مثالية'],
+        },
+        engine: {
+          title: 'تنظيف المحرك',
+          desc: 'إزالة الشحوم وحماية المحرك بمظهر مذهل.',
+          features: ['إزالة الشحوم', 'حماية البلاستيك', 'مظهر المصنع', 'فحص بصري'],
+        },
+      },
+    },
+    whyUs: {
+      eyebrow: 'لماذا نحن',
+      title: 'التميز في خدمة سيارتك',
+      subtitle: 'حرفية يدوية مع أفضل المنتجات في السوق.',
+      points: {
+        products: { title: 'منتجات احترافية', desc: 'أشهر العلامات التجارية الفاخرة عالمياً.' },
+        team: { title: 'فريق ذو خبرة', desc: 'مفصلون معتمدون وشغوفون.' },
+        result: { title: 'نتيجة فاخرة', desc: 'تشطيب لا تشوبه شائبة في كل خدمة.' },
+        speed: { title: 'خدمة سريعة', desc: 'في الدار البيضاء، وقتك ثمين.' },
+      },
+    },
+    pricing: {
+      eyebrow: 'الأسعار',
+      title: 'باقات تناسب كل الاحتياجات',
+      subtitle: 'اختر العناية المثالية لسيارتك.',
+      popular: 'الأكثر شعبية',
+      bookNow: 'احجز',
+      includes: 'يشمل:',
+      plans: {
+        basic: {
+          name: 'الأساسي',
+          tagline: 'غسيل خارجي سريع',
+          price: '149',
+          features: [
+            'غسيل الهيكل الخارجي',
+            'تنظيف العجلات',
+            'تجفيف بالألياف الدقيقة',
+            'شفط داخلي سريع',
+            'زجاج خارجي',
+          ],
+        },
+        premium: {
+          name: 'المميز',
+          tagline: 'العناية الكاملة داخلية/خارجية',
+          price: '349',
+          features: [
+            'كل ما في الأساسي',
+            'تنظيف داخلي شامل',
+            'تعقيم المقصورة',
+            'عطر فاخر',
+            'حماية طلاء سريعة',
+            'البلاستيك ولوحة القيادة',
+          ],
+        },
+        vip: {
+          name: 'VIP تفصيل',
+          tagline: 'تجربة التفصيل المطلقة',
+          price: '899',
+          features: [
+            'كل ما في المميز',
+            'تلويل الهيكل بالماكينة',
+            'حماية سيراميكية سنة',
+            'تنظيف المحرك',
+            'ترميم المصابيح',
+            'تشطيب المسابقات',
+            'ضمان الرضا',
+          ],
+        },
+      },
+    },
+    gallery: {
+      eyebrow: 'المعرض',
+      title: 'حرفية بالصور',
+      subtitle: 'اكتشف النتائج المذهلة لخدماتنا.',
+      filters: {
+        all: 'الكل',
+        exterior: 'الخارج',
+        interior: 'الداخل',
+        detailing: 'التفصيل',
+        before: 'قبل/بعد',
+      },
+    },
+    beforeAfter: {
+      eyebrow: 'التحول',
+      title: 'قبل / بعد',
+      subtitle: 'اسحب للكشف عن التحول.',
+      slide: 'اسحب',
+    },
+    booking: {
+      eyebrow: 'الحجز',
+      title: 'احجز غسيلتك',
+      subtitle: 'فريقنا يرد عليك خلال 30 دقيقة.',
+      form: {
+        name: 'الاسم الكامل',
+        phone: 'الهاتف',
+        service: 'الخدمة المطلوبة',
+        date: 'التاريخ',
+        message: 'رسالة (اختياري)',
+        selectService: 'اختر خدمة',
+        submit: 'احجز غسلتي',
+        submitting: 'جاري الإرسال...',
+        success: 'تم إرسال الحجز! سنتواصل معك قريباً.',
+        required: 'مطلوب',
+      },
+    },
+    location: {
+      eyebrow: 'موقعنا',
+      title: 'غسيل السيارات الفاخر الدار البيضاء',
+      subtitle: 'في قلب الدار البيضاء، دقائق منك.',
+      address: 'شارع الزرقطوني، الدار البيضاء 20000، المغرب',
+      phone: 'الهاتف',
+      whatsapp: 'واتساب',
+      hours: 'ساعات العمل',
+      hoursValue: 'الإثنين-السبت 8ص-8م · الأحد 9ص-6م',
+      directions: 'الاتجاهات',
+    },
+    footer: {
+      tagline: 'غسيل السيارات الفاخر في قلب الدار البيضاء.',
+      sections: 'التنقل',
+      services: 'الخدمات',
+      contact: 'اتصل',
+      legal: 'الشروط',
+      privacy: 'الخصوصية',
+      rights: 'جميع الحقوق محفوظة.',
+      madeWith: 'صنع بشغف في الدار البيضاء',
+    },
+  },
+  en: {
+    nav: {
+      services: 'Services',
+      pricing: 'Pricing',
+      gallery: 'Gallery',
+      whyUs: 'Why Us',
+      contact: 'Contact',
+      book: 'Book Now',
+      language: 'Language',
+      theme: 'Theme',
+    },
+    hero: {
+      badge: 'Premium Auto Detailing · Casablanca',
+      title: 'Your car deserves',
+      titleAccent: 'the best care',
+      subtitle: 'Premium car wash, interior cleaning, detailing and automotive protection with exceptional finish in the heart of Casablanca.',
+      ctaPrimary: 'Book Now',
+      ctaSecondary: 'View Services',
+      stats: {
+        cars: 'Cars treated',
+        rating: 'Customer rating',
+        experience: 'Years experience',
+        satisfaction: 'Satisfaction',
+      },
+    },
+    services: {
+      eyebrow: 'Our Services',
+      title: 'Complete care for your vehicle',
+      subtitle: 'Premium services crafted for every detail of your car.',
+      items: {
+        exterior: {
+          title: 'Exterior Wash',
+          desc: 'Body cleaning, rims, windows and premium microfiber drying.',
+          features: ['Premium shampoo', 'Microfiber dry', 'Radiant shine', 'UV protection'],
+        },
+        interior: {
+          title: 'Interior Cleaning',
+          desc: 'Full vacuum, disinfection and ambient fragrance for a brand-new cabin.',
+          features: ['Premium vacuum', 'Disinfection', 'Car fragrance', 'Leather & fabrics'],
+        },
+        detailing: {
+          title: 'Full Detailing',
+          desc: 'Body polishing, paint restoration and long-lasting ceramic protection.',
+          features: ['Body polish', 'Paint restoration', 'Ceramic protection', 'Mirror finish'],
+        },
+        protection: {
+          title: 'Ceramic Protection',
+          desc: '9H ceramic coating for durable protection and exceptional shine.',
+          features: ['9H coating', 'Hydrophobic effect', '2-5 years', 'Anti-scratch'],
+        },
+        polish: {
+          title: 'Body Polishing',
+          desc: 'Professional paint correction to remove micro-scratches and defects.',
+          features: ['Paint correction', 'Scratch removal', 'Machine polish', 'Perfect finish'],
+        },
+        engine: {
+          title: 'Engine Cleaning',
+          desc: 'Degreasing and protection of the engine bay with spectacular results.',
+          features: ['Degreasing', 'Plastic protection', 'Factory finish', 'Visual inspection'],
+        },
+      },
+    },
+    whyUs: {
+      eyebrow: 'Why choose us',
+      title: 'Excellence at the service of your car',
+      subtitle: 'Craftsmanship combined with the best products on the market.',
+      points: {
+        products: { title: 'Professional products', desc: 'World-renowned premium brands.' },
+        team: { title: 'Experienced team', desc: 'Certified and passionate detailers.' },
+        result: { title: 'Premium result', desc: 'Impeccable finish guaranteed on every service.' },
+        speed: { title: 'Fast service', desc: 'In Casablanca, your time is precious.' },
+      },
+    },
+    pricing: {
+      eyebrow: 'Pricing',
+      title: 'Formulas adapted to every need',
+      subtitle: 'Choose the perfect care for your vehicle.',
+      popular: 'Most popular',
+      bookNow: 'Book',
+      includes: 'Includes:',
+      plans: {
+        basic: {
+          name: 'Basic',
+          tagline: 'Express exterior wash',
+          price: '149',
+          features: [
+            'Exterior body wash',
+            'Wheel cleaning',
+            'Microfiber drying',
+            'Quick interior vacuum',
+            'Exterior windows',
+          ],
+        },
+        premium: {
+          name: 'Premium',
+          tagline: 'Complete interior/exterior care',
+          price: '349',
+          features: [
+            'Everything in Basic',
+            'Full interior cleaning',
+            'Cabin disinfection',
+            'Premium fragrance',
+            'Express paint protection',
+            'Plastics & dashboard',
+          ],
+        },
+        vip: {
+          name: 'VIP Detailing',
+          tagline: 'The ultimate detailing experience',
+          price: '899',
+          features: [
+            'Everything in Premium',
+            'Machine body polish',
+            '1-year ceramic protection',
+            'Engine cleaning',
+            'Headlight restoration',
+            'Show finish',
+            'Satisfaction guarantee',
+          ],
+        },
+      },
+    },
+    gallery: {
+      eyebrow: 'Gallery',
+      title: 'Our craft in images',
+      subtitle: 'Discover the spectacular results of our services.',
+      filters: {
+        all: 'All',
+        exterior: 'Exterior',
+        interior: 'Interior',
+        detailing: 'Detailing',
+        before: 'Before/After',
+      },
+    },
+    beforeAfter: {
+      eyebrow: 'Transformation',
+      title: 'Before / After',
+      subtitle: 'Drag to reveal the transformation.',
+      slide: 'Drag',
+    },
+    booking: {
+      eyebrow: 'Booking',
+      title: 'Book your wash',
+      subtitle: 'A team responds in less than 30 minutes.',
+      form: {
+        name: 'Full name',
+        phone: 'Phone',
+        service: 'Desired service',
+        date: 'Preferred date',
+        message: 'Message (optional)',
+        selectService: 'Select a service',
+        submit: 'Book my wash',
+        submitting: 'Sending...',
+        success: 'Booking sent! We will contact you shortly.',
+        required: 'Required',
+      },
+    },
+    location: {
+      eyebrow: 'Find us',
+      title: 'Premium Car Wash Casablanca',
+      subtitle: 'In the heart of Casablanca, minutes from you.',
+      address: 'Boulevard Zerktouni, Casablanca 20000, Morocco',
+      phone: 'Phone',
+      whatsapp: 'WhatsApp',
+      hours: 'Hours',
+      hoursValue: 'Mon-Sat 8am-8pm · Sun 9am-6pm',
+      directions: 'Directions',
+    },
+    footer: {
+      tagline: 'Premium car wash in the heart of Casablanca.',
+      sections: 'Navigation',
+      services: 'Services',
+      contact: 'Contact',
+      legal: 'Legal',
+      privacy: 'Privacy',
+      rights: 'All rights reserved.',
+      madeWith: 'Made with passion in Casablanca',
+    },
+  },
+}
+
+export const getTranslation = (lang, key) => {
+  const keys = key.split('.')
+  let result = translations[lang]
+  for (const k of keys) {
+    if (result && typeof result === 'object') result = result[k]
+    else return key
+  }
+  return result || key
+}

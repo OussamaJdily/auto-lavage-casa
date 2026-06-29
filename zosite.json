@@ -1,0 +1,17 @@
+{
+  "name": "auto-lavage-casa",
+  "label": "Auto Lavage Premium Casablanca",
+  "local_port": 3003,
+  "entrypoint": "bash -c './node_modules/.bin/vite preview --port 3003 --host'",
+  "buildCommand": "npm run build",
+  "publish": {
+    "label": "auto-lavage-casa",
+    "type": "http",
+    "entrypoint": "node_modules/.bin/vite preview --port 3003 --host",
+    "published_port": 3003,
+    "env": {
+      "NODE_ENV": "production",
+      "ZO_CLIENT_IDENTITY_TOKEN": "none"
+    }
+  }
+}

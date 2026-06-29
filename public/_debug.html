@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html><head><title>TEST</title></head>
+<body>
+<div id="root"></div>
+<script type="module">
+window.addEventListener('error', e => { document.body.innerText = 'ERR: ' + e.message + ' at ' + e.filename + ':' + e.lineno; });
+window.addEventListener('unhandledrejection', e => { document.body.innerText = 'REJ: ' + e.reason; });
+import('https://auto-lavage-casa-19960807.zocomputer.io/assets/index-B0p7suuv.js').then(()=>{
+  setTimeout(()=>{ const r=document.getElementById('root'); document.body.innerText = 'OK loaded, root: '+r.innerHTML.length+' chars';}, 2000);
+}).catch(e => { document.body.innerText = 'IMPORT FAIL: ' + e.message; });
+</script>
+</body></html>
